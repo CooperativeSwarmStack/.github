@@ -1,5 +1,12 @@
 # Cooperative Slung-Load UAV Software Architecture
 A ROS 2 and PX4-based distributed software framework designed for cooperative cable-suspended payload transportation using multi-rotor UAV formations. This project provides a full-stack solution encompassing physical simulation, distributed swarm communication middleware, high-level formation control, and multi-agent validation pipelines in both Software-In-The-Loop (SITL) and Hardware-In-The-Loop (HITL) environments.
+
+Developed at Sapienza University of Rome (Department of Aerospace and Mechanical Engineering).
+
+![SITL & HITL physical simulation environment](./figures/sim.png)
+
+## Key System Features
+
 <!--
 
 **Here are some ideas to get you started:**
