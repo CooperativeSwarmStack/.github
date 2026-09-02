@@ -19,6 +19,8 @@ Developed at Sapienza University of Rome (Department of Aerospace and Mechanical
 - ROS2 & DDS-Native Execution:
   Leverages ROS2's distributed DDS middleware for modular, peer-to-peer inter-agent communication, treating each quadrotor as an autonomous computational node.
 
+![Control Architecture](./figures/control_architecture.png)
+
 # Useful Resources
 - ![ROS2 Documentation](https://docs.ros.org/en/humble/index.html)
 - ![PX4 Autopilot Documentation](https://docs.px4.io/main/en/)
