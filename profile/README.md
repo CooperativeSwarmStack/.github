@@ -5,7 +5,7 @@ Developed at Sapienza University of Rome (Department of Aerospace and Mechanical
 
 ![SITL & HITL physical simulation environment](./figures/mission.png)
 
-## Key System Features
+# Key System Features
 
 - Custom Physics Simulator
   Real-time dynamic simulation integrated with PX4 Autopilot for SITL & HITL validation. Supports multi-instance quadcopter flights and cooperative slung-load configurations via multibody dynamics.
@@ -18,6 +18,11 @@ Developed at Sapienza University of Rome (Department of Aerospace and Mechanical
 
 - ROS2 & DDS-Native Execution:
   Leverages ROS2's distributed DDS middleware for modular, peer-to-peer inter-agent communication, treating each quadrotor as an autonomous computational node.
+
+# Useful Resources
+- ![ROS2 Documentation](https://docs.ros.org/en/humble/index.html)
+- ![PX4 Autopilot Documentation](https://docs.px4.io/main/en/)
+- 
 <!--
 
 **Here are some ideas to get you started:**
