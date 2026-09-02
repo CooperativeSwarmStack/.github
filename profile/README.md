@@ -1,5 +1,4 @@
-## Hi there 👋
-
+# Flight Stack for Multicopter Formation Flight and Cooperative Transport
 <!--
 
 **Here are some ideas to get you started:**
