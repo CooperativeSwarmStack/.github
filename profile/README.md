@@ -5,19 +5,19 @@ Developed at Sapienza University of Rome (Department of Aerospace and Mechanical
 
 ![SITL & HITL physical simulation environment](./figures/mission.png)
 
-#🚀 Key System Features
+## Key System Features
 
-- 🛠️ Custom Physics Simulator
-  Real-time dynamic simulation integrated with PX4 Autopilot for SITL & HITL validation. Supports multi-instance quadcopter flights and cooperative slung-load configurations via multibody   dynamics.
+- Custom Physics Simulator
+  Real-time dynamic simulation integrated with PX4 Autopilot for SITL & HITL validation. Supports multi-instance quadcopter flights and cooperative slung-load configurations via multibody dynamics.
 
--🧠 Decentralized Formation Strategy
+- Decentralized Formation Strategy:
   Computes distributed optimal control laws locally on each UAV, eliminating single-point-of-failure architectures while tracking global reference trajectories.
 
-- 🔄 Hierarchical Nested-Loop Control
+- Hierarchical Nested-Loop Control:
   Decouples fleet-level cooperative maneuvers (outer loop) from individual flight stabilization (inner loop), guaranteeing system-wide stability during complex tasks.
 
-- 🌐 ROS2 & DDS-Native Execution
-    Leverages ROS2's distributed DDS middleware for modular, peer-to-peer inter-agent communication, treating each quadrotor as an autonomous computational node.
+- ROS2 & DDS-Native Execution:
+  Leverages ROS2's distributed DDS middleware for modular, peer-to-peer inter-agent communication, treating each quadrotor as an autonomous computational node.
 <!--
 
 **Here are some ideas to get you started:**
