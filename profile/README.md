@@ -22,9 +22,10 @@ Developed at Sapienza University of Rome (Department of Aerospace and Mechanical
 ![Control Architecture](./figures/control_architecture.png)
 
 # Useful Resources
-- ![ROS2 Documentation](https://docs.ros.org/en/humble/index.html)
-- ![PX4 Autopilot Documentation](https://docs.px4.io/main/en/)
-- 
+- [ROS2 Documentation](https://docs.ros.org/en/humble/index.html)
+- [PX4 Autopilot Documentation](https://docs.px4.io/main/en/)
+- [SeedStudio NVidia Jetson reComputer j4012 Documentation](https://wiki.seeedstudio.com/reComputer_Industrial_Getting_Started/)
+- Jetpack 6.0 (Ubuntu 22.04) for reComputer j4012 system Image [Download](https://seeedstudio88-my.sharepoint.com/:u:/g/personal/youjiang_yu_seeedstudio88_onmicrosoft_com/EbKZo6jvhR5MtP5hSB2mWIUBLkMB_pl4zCJoGhAbao5yQw?e=WmoPbO)
 <!--
 
 **Here are some ideas to get you started:**
