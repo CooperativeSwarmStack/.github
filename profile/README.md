@@ -3,7 +3,7 @@ A ROS 2 and PX4-based distributed software framework designed for cooperative ca
 
 Developed at Sapienza University of Rome (Department of Aerospace and Mechanical Engineering).
 
-![SITL & HITL physical simulation environment](./figures/sim.png)
+![SITL & HITL physical simulation environment](./figures/mission.png)
 
 ## Key System Features
 
