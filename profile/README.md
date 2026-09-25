@@ -26,6 +26,44 @@ Developed at Sapienza University of Rome (Department of Aerospace and Mechanical
 - [PX4 Autopilot Documentation](https://docs.px4.io/main/en/)
 - [SeedStudio NVidia Jetson reComputer j4012 Documentation](https://wiki.seeedstudio.com/reComputer_Industrial_Getting_Started/)
 - Jetpack 6.0 (Ubuntu 22.04) for reComputer j4012 system Image [Download](https://seeedstudio88-my.sharepoint.com/:u:/g/personal/youjiang_yu_seeedstudio88_onmicrosoft_com/EbKZo6jvhR5MtP5hSB2mWIUBLkMB_pl4zCJoGhAbao5yQw?e=WmoPbO)
+
+## Prerequisites
+
+- **OS:** Ubuntu 22.04 LTS (Jammy Jellyfish)
+- **ROS 2:** Humble Hawksbill
+- **Autopilot:** PX4 Autopilot
+
+## Installation & Setup
+
+### 1. ROS 2 Installation
+Follow the official ROS 2 Humble installation guide to install Debian packages:
+- [ROS 2 Humble Ubuntu Install Guide](https://docs.ros.org/en/humble/Installation/Ubuntu-Install-Debs.html)
+
+After installation, source the setup file in your `.bashrc`:
+
+```bash
+echo "source /opt/ros/humble/setup.bash" >> ~/.bashrc
+source ~/.bashrc
+```
+
+### PX4 Autopilot Installation
+Use as reference the [official ROS2 PX4 installation & setup](https://docs.px4.io/main/en/ros2/user_guide)
+Clone the PX4 official repo:
+```bash
+cd
+git clone https://github.com/PX4/PX4-Autopilot.git --recursive
+```
+Resolve PX4 required dependencies:
+```bash
+bash ./PX4-Autopilot/Tools/setup/ubuntu.sh
+```
+Build a developer instance:
+```bash
+cd PX4-Autopilot/
+make px4_sitl
+```
+
+
 <!--
 
 **Here are some ideas to get you started:**
