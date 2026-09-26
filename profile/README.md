@@ -62,8 +62,17 @@ Build a developer instance:
 cd PX4-Autopilot/
 make px4_sitl
 ```
+### ROS2 Workspace setup
+Best practice is to create a new directory for every new workspace. The name doesn’t matter, but it is helpful to have it indicate the purpose of the workspace.
+Let’s choose the directory name ```swarm_ws```:
+```bash
+mkdir -p ~/swarm_ws/src
+cd ~/swarm_ws/src
+```
+Clone all swarm ROS2 packages:
+```bash
 
-
+```
 <!--
 
 **Here are some ideas to get you started:**
