@@ -78,6 +78,30 @@ git clone https://github.com/CooperativeSwarmStack/swarm_guidance.git
 git clone https://github.com/CooperativeSwarmStack/swarm_interfaces.git
 git clone https://github.com/PX4/px4_msgs.git
 ```
+Use ```rosdep``` to check package dependencies:
+```bash
+cd ~/swarm_ws
+rosdep update #to ensure rosdep has the latest package index
+rosdep install --from-paths src --ignore-src -s
+rosdep install --from-paths src --ignore-src -y
+```
+To build ROS2 packages inside the ```swarm_ws``` use colcon:
+```bash
+cd ~/swarm_ws
+colcon build --symlink -install
+```
+[!NOTE]
+To install colcon ina ROS2 project:
+```bash
+sudo sh -c 'echo "deb [arch=amd64,arm64] http://repo.ros2.org/ubuntu/main `lsb_release -cs` main" > /etc/apt/sources.list.d/ros2-latest.list'
+curl -s https://raw.githubusercontent.com/ros/rosdistro/master/ros.asc | sudo apt-key add -
+```
+After that you can install the Debian package which depends on ```colcon-core``` as well as commonly used extension packages
+```bash
+sudo apt update
+sudo apt install python3-colcon-common-extensions
+sudo apt-get install libserial-dev
+```
 <!--
 
 **Here are some ideas to get you started:**
