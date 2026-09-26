@@ -71,7 +71,12 @@ cd ~/swarm_ws/src
 ```
 Clone all swarm ROS2 packages:
 ```bash
-
+git clone https://github.com/CooperativeSwarmStack/flight_manager.git
+git clone https://github.com/CooperativeSwarmStack/simulator.git
+git clone https://github.com/CooperativeSwarmStack/formation_controller.git
+git clone https://github.com/CooperativeSwarmStack/swarm_guidance.git
+git clone https://github.com/CooperativeSwarmStack/swarm_interfaces.git
+git clone https://github.com/PX4/px4_msgs.git
 ```
 <!--
 
