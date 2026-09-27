@@ -97,6 +97,7 @@ To build ROS 2 packages inside the `swarm_ws` workspace, use `colcon`.
 ```bash
 cd ~/swarm_ws
 colcon build --symlink-install
+```
 
 <!--
 
