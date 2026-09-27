@@ -35,7 +35,7 @@ Developed at Sapienza University of Rome (Department of Aerospace and Mechanical
 
 ## Installation & Setup
 
-### 1. ROS 2 Installation
+### ROS 2 Installation
 Follow the official ROS 2 Humble installation guide to install Debian packages:
 - [ROS 2 Humble Ubuntu Install Guide](https://docs.ros.org/en/humble/Installation/Ubuntu-Install-Debs.html)
 
@@ -98,7 +98,35 @@ To build ROS 2 packages inside the `swarm_ws` workspace, use `colcon`.
 cd ~/swarm_ws
 colcon build --symlink-install
 ```
-
+To use ```swarm_ws``` as ROS2 workspace you have to source the workspace setup file in your `.bashrc`
+```bash
+echo "source ~/swarm_ws/install/setup.bash" >> ~/.bashrc
+source ~/.bashrc
+```
+### uXRCE-DDS Agent Installation
+This package can be installed as a ROS2 package inside the ws or a standalone from source.
+#### A - Build in ROS2 workspace
+```bash
+cd ~/swarm_ws/src/
+git clone -b v2.4.2 https://github.com/eProsima/Micro-XRCE-DDS-Agent.git
+```
+re-build the ROS2 workspace
+```bash
+cd ~/swarm_ws
+colcon build
+```
+#### B - Install Standalone from Source
+On Ubuntu you can build from source and install the Agent standalone using the following commands (DDS v2):
+```bash
+git clone -b v2.4.3 https://github.com/eProsima/Micro-XRCE-DDS-Agent.git
+cd Micro-XRCE-DDS-Agent
+mkdir build
+cd build
+cmake ..
+make
+sudo make install
+sudo ldconfig /usr/local/lib/
+```
 <!--
 
 **Here are some ideas to get you started:**
