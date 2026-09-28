@@ -51,7 +51,7 @@ Use as reference the [official ROS2 PX4 installation & setup](https://docs.px4.i
 Clone the PX4 official repo:
 ```bash
 cd
-git clone [https://github.com/PX4/PX4-Autopilot.git](https://github.com/CooperativeSwarmStack/PX4-Autopilot.git) --recursive
+git clone https://github.com/CooperativeSwarmStack/PX4-Autopilot.git --recursive
 ```
 Checkout with version 1.17.0:
 ```bash
