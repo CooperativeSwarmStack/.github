@@ -24,14 +24,14 @@ Developed at Sapienza University of Rome (Department of Aerospace and Mechanical
 # Useful Resources
 - [ROS2 Documentation](https://docs.ros.org/en/humble/index.html)
 - [PX4 Autopilot Documentation](https://docs.px4.io/main/en/)
-- [SeedStudio NVidia Jetson reComputer j4012 Documentation](https://wiki.seeedstudio.com/reComputer_Industrial_Getting_Started/)
+- [SeeedStudio NVidia Jetson reComputer j4012 Documentation](https://wiki.seeedstudio.com/reComputer_Industrial_Getting_Started/)
 - Jetpack 6.0 (Ubuntu 22.04) for reComputer j4012 system Image [Download](https://seeedstudio88-my.sharepoint.com/:u:/g/personal/youjiang_yu_seeedstudio88_onmicrosoft_com/EbKZo6jvhR5MtP5hSB2mWIUBLkMB_pl4zCJoGhAbao5yQw?e=WmoPbO)
 
 ## Prerequisites
 
 - **OS:** Ubuntu 22.04 LTS (Jammy Jellyfish)
 - **ROS 2:** Humble Hawksbill
-- **Autopilot:** PX4 Autopilot
+- **Autopilot:** PX4 Autopilot (v1.17.0)
 
 ## Installation & Setup
 
@@ -52,6 +52,11 @@ Clone the PX4 official repo:
 ```bash
 cd
 git clone https://github.com/PX4/PX4-Autopilot.git --recursive
+```
+Checkout with version 1.17.0:
+```bash
+cd ~/PX4-Autopilot
+git checkout v1.17.0
 ```
 Resolve PX4 required dependencies:
 ```bash
@@ -78,6 +83,11 @@ git clone https://github.com/CooperativeSwarmStack/swarm_guidance.git
 git clone https://github.com/CooperativeSwarmStack/swarm_interfaces.git
 git clone https://github.com/PX4/px4_msgs.git
 git clone https://github.com/RoverRobotics-forks/serial-ros2.git
+```
+Checkout ```px4_msgs``` package for PX4-Autopilot version, this is important to align PX4 messages between the Autopilot and uXRCE-DDS:
+```bash
+cd ~/swarm_ws/src/px4_msgs
+git checkout v1.17.0
 ```
 Use ```rosdep``` to check package dependencies:
 ```bash
