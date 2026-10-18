@@ -90,4 +90,4 @@
 This document **must** be updated and committed to version control whenever:
 1. **Hardware Layout Changes:** Replacing the Mini PCIe LTE module, occupying the M.2 Key B slot, upgrading SSD capacity, or adding secondary camera payloads via MIPI CSI.
 2. **Wiring / Interface Routing Changes:** Modifying USB port allocations, changing Ethernet IP assignments, activating digital I/O channels, or re-routing power terminals.
-3. **Software Environment Changes:** Re-flashing JetPack, upgrading Ubuntu packages, kernel modifications, or ROS 2 workspace updates.
+3. **Software Environment Changes:** Re-flashing JetPack, upgrading Ubuntu packages and kernel modifications.
