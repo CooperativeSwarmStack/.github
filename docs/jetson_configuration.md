@@ -15,9 +15,9 @@
 | **CPU Architecture** | 8-core Arm® Cortex®-A78AE v8.2 64-bit (2 MB L2 + 4 MB L3) |
 | **System RAM** | 16 GB 128-bit LPDDR5 (102.4 GB/s bandwidth) |
 | **Carrier Board** | Seeed Studio reComputer Industrial J4012 Carrier Board |
-| **Primary Mass Storage** | 256 GB NVMe M.2 2280 SSD (PCIe Gen 4.0 x4, M.2 Key M slot) |
-| **Primary Power Supply** | 12 V DC nominal, fed directly via a buck step-down converter connected to the drone's Power Distribution Board (PDB) / Avionics Bus |
-| **Bench Power Supply** | External 11 V – 19 V DC (5 A current-limited) supply connected via 2-pole terminal block / DC Jack |
+| **Primary Mass Storage** | 128 GB NVMe M.2 2280 SSD (PCIe Gen 4.0 x4, M.2 Key M slot) |
+| **In Flight Power Supply** | 12 V DC nominal, fed directly via a buck step-down converter connected to the drone's Power Distribution Board (PDB) |
+| **Bench Power Supply** | External 11 V – 19 V DC (5 A current-limited) supply connected via 2-pole terminal block |
 
 ---
 ## 2. Additional Hardware Modules & Peripherals
