@@ -35,6 +35,9 @@
 ---
 
 ## 3. Ports and Interfaces Status Table
+<img width="4012" height="1300" alt="image" src="https://github.com/user-attachments/assets/a25c138f-18a2-4b60-8fbf-127586553143" />
+<img width="3944" height="1496" alt="image" src="https://github.com/user-attachments/assets/caa0e3a1-7065-4fd8-8330-1313645c5aa9" />
+
 
 | Physical Interface / Port | In Use | Connected Device | Purpose / Function Description |
 | :--- | :--- | :--- | :--- |
