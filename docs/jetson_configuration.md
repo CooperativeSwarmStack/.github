@@ -1,7 +1,7 @@
 # Jetson Platform Configuration Reference
-**File path:** `docs/jetson_configuration.md`  
+
 **Document Version:** 1.1.0  
-**Last Updated:** 2026-10-19  
+**Last Updated:** 2026-10-20  
 **Status:** Active Reference Document  
 
 ---
