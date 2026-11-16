@@ -1,0 +1,13 @@
+- [ ] **Accesso ai quadricotteri per HITL:** Quando sarà possibile avere nuovamente accesso ai quadricotteri per i test HITL?
+  - **Requisiti per avere i quadricotteri allineati:**
+    - **Versione Autopilota:** PX4 `v1.17.0` (vedi [fork da official repo](https://github.com/CooperativeSwarmStack/PX4-Autopilot.git))
+    - **Sistema:** JetPack 6.0
+    - **Hardware (UAV3):** Montaggio della copertura stampata in 3D anche sull'UAV3 (inizialmente fornito in una configurazione di facile accesso per l'elettronica interna)
+- [ ] **Procedura di override del pilota:** Ogni quadricottero sarà dotato di un radiocomando dedicato?
+- [ ] **Modulo Wi-Fi su interfaccia USB:** Poiché gli slot Mini PCIe e M.2 Key-B della carrier board (Seeed reComputer Industrial J4012) sono destinati esclusivamente a moduli LTE, è possibile procedere con l'installazione dell'adattatore USB **Alfa AWUS036ACM** (nativamente compatibile con kernel `5.15` / JetPack 6.0 e reti Mesh `802.11s`)?
+  - **Proposta di installazione:**
+    - **Collegamento alla Jetson:** Tramite cavo di prolunga USB.
+    - **Antenne esterne:** Portare le antenne all'esterno della struttura/copertura tramite cavi di prolunga SMA (maschio/femmina).
+  - **Aspetti da verificare/definire:**
+    - Valutazione di peso e ingombro complessivo del setup.
+    - Modalità di fissaggio delle antenne alla struttura (eventuale necessità di supporti dedicati oppure sfruttare quelli già presenti peri radio modem).
