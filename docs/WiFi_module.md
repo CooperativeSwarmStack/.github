@@ -21,6 +21,14 @@ This guide explains how the **MediaTek MT7612U** chipset inside the **ALFA AWUS0
 
 ---
 
+## Introduction
+
+IEEE 802.11s is an extension to the IEEE 802.11 standard which allows multiple wireless nodes to connect with each other without having an AP between them. If you have an AP at your home, and you want to copy a file to another laptop B which is connected to the same AP as your own laptop (laptop A), then A transmits the data to the AP, which in turn, transmits it to laptop B. So all the communication between A and B is done via the AP.
+
+IEEE 802.11s, however, allows direct communication between A and B without the need for an AP. However, the real power of IEEE 802.11s manifests itself in the presence of multiple wireless nodes. Using the 802.11s mesh standard, the nodes can form a multi-hop network where all the links of the network are wireless. This means that no wired infrastructure is needed to setup the network. This is very handy in a lot of scenarios, for example, disaster relief teams can carry laptops with IEEE 802.11s support. This would enable them to exchange information with other laptops in the area even if those are not in direct range.
+
+IEEE 802.11 standard defines a Wireless Distribution System. Typical implementations of a WDS are found at universities for example, where multiple APs are installed throughout the campus advertising a single SSID. The APs are connected together using a wired network such as Ethernet, but users can connect to the APs via a wireless connection. Think of IEEE 802.11s as replacing wires with wireless links in the above scenario. That removes the infrastructure cost such as laying wires and maintaining them. Also, it enables flexibility in terms of moving the APs or installing new APs.
+
 ## 1. Why a specific adapter is needed
 
 Building a WiFi network between nodes without a router, or a mesh that automatically routes traffic through intermediate nodes, is not possible with most USB WiFi adapters: the kernel driver does not expose the necessary modes.
