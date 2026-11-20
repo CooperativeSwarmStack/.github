@@ -1,5 +1,7 @@
 # 802.11s WiFi Mesh with the ALFA AWUS036ACM on Seeed Studio reComputer Industrial J4012
 
+> **Source note.** This guide is an adaptation, for NVIDIA Jetson nodes on Seeed Studio reComputer Industrial J4012, of the article [*ALFA AWUS036ACM: IBSS Ad Hoc and 802.11s Mesh on Raspberry Pi*](https://yupitek.com/en/blog/awus036acm-ibss-mesh-raspberry-pi/) published by Yupitek. The operating principles, commands and values come from the original article, which is written for Raspberry Pi. Items not yet verified on Jetson are listed in the [TODO](#12-todo-items-to-verify) section.
+
 This guide explains how the **MediaTek MT7612U** chipset inside the **ALFA AWUS036ACM** USB dongle makes it possible to build a WiFi mesh network between multiple nodes, with no router or access point. In this case the nodes are **NVIDIA Jetson devices on Seeed Studio reComputer Industrial J4012**.
 
 ## Table of Contents
@@ -223,12 +225,12 @@ phy#1
 **Step 2 — Add a mesh point interface named `mesh0`:**
 
 ```bash
-sudo iw phy phy1 interface add mesh0 type mp mesh_id RaspberryMesh
+sudo iw phy phy1 interface add mesh0 type mp mesh_id JetsonMesh
 ```
 
 This creates a virtual interface `mesh0` on the same physical radio as `wlan1`. The original `wlan1` can remain in managed mode (for example for internet access) simultaneously: this is VIF (Virtual Interface) in action.
 
-> `mesh_id` must be identical on all nodes of the network. The name `RaspberryMesh` comes from the original example and can be replaced with an identifier of your choice.
+> `mesh_id` must be identical on all nodes of the network. The name `JetsonMesh` can be replaced with an identifier of your choice.
 
 **Step 3 — Set the operating channel (5 GHz Channel 36):**
 
